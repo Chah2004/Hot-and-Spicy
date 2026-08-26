@@ -1,0 +1,590 @@
+*{padding:0;margin:0;box-sizing: border-box;}
+
+
+html{
+	scroll-behaviour:smooth;
+}
+
+
+::-webkit-scrollbar{
+	width:0.625rem;
+}
+
+
+::-webkit-scrollbar-track{
+	background:white;
+}
+
+
+::-webkit-scrollbar-thumb{
+	background:red;
+}
+
+body{
+	scroll-behaviour:smooth;
+	font-family:'Roboto',sans-serif;
+	/*font-family: 'Akaya Kanadaka', cursive;*/
+}
+
+
+header{
+	width:100%;
+	height:100vh;
+	background:url('E:\red.jpg');	
+	background-size:50% 90%;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	position:relative;
+	
+}
+
+nav{
+	z-index:12;
+	opacity:0.85:
+	overflow:hidden;
+	position:fixed;
+	width:100%;
+	height:100px;
+	padding:0px 70px;
+	background:black;
+	color:black;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	box-shadow:2px 0px 5px white;
+}
+
+.menu a{
+	text-decoration:none;
+	color:white;
+	padding:10px 20px;
+}
+
+.menu a:last-child{
+	background-color:white;
+	color:black;
+	border-radius:8px;
+	cursor:pointer;
+	transition: 0.4s ease-in-out;
+	box-shadow:2px 0px 5px white;
+}
+
+.menu a:hover{
+	color:red;
+}
+
+.h-text{
+	position:absolute;
+	top:30%;
+	left:5%;
+	color:white;
+	padding:15px;
+}
+
+.h-text h6{
+	position:relative;
+	top:7px;
+}	
+
+.h-text h3{
+	position:relative;
+	top:5px;
+	font-size:2em;
+	line-height:1.5em;
+}
+
+.h-text h1{
+	font-family:informal roman;
+	font-size:4em;
+	line-height:1.5em;
+}
+
+.h-text h1 span{
+	color:red;
+}
+
+.h-text h4{
+	position:relative;
+	top:5px;
+}
+
+.h-text p{
+	letter-spacing:3px;
+}
+
+.h-text p span{
+	color:red;
+}
+	
+.head-button a{
+	background-color:white;
+	color:black;
+	border-radius:8px;
+	cursor:pointer;
+	transition: 0.4s ease-in-out;
+	text-decoration:none;
+	top:55px;
+	position:relative;
+	padding:10px 20px;
+	justify-content:space-between;
+	box-shadow:2px 0px 5px white;
+}
+
+.head-button a:hover{
+	color:red;
+}
+
+.logo img{
+	width:90px;
+	height:3.8125rem;
+	transform: scale(1.6);
+}
+
+.explore-food{
+	padding:50px 100px;
+		
+}
+
+.food{
+	text-align:center;
+	position:relative;
+	top:110px;
+	position:relative;
+	top:100px;
+}
+
+.food h1{
+	color:white;
+	letter-spacing:0.2rem;
+	font-size:2rem;
+	font-weight:bolder;
+}
+
+.food h1 span{
+	color:red;
+}
+
+.food p{
+	color:white;
+	margin:15px 0;
+	letter-spacing:0.2rem;
+}
+
+.food p span{
+	color:red;
+	font-size:2rem;
+	font-weight:bolder;
+}
+
+.food p:hover{
+	color:goldenrod;
+}
+
+.items-container{
+	width: 100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	cursor:pointer;
+	margin:4rem 0;
+	position:relative;
+	top:90px;
+}
+
+.items-container .items{
+	flex-basis:30%;
+	padding:0.8rem;
+	position:relative;
+}
+
+
+.items img{
+	width:100%;
+	height:250px;
+	transition:0.5s ease-in-out;
+}
+
+.items h2{
+	color:white;
+	text-align:center;
+	letter-spacing:0.2rem;
+}	
+
+.items h2 span{
+	color:red;
+	font-weight:bolder;
+}
+
+.items:hover img{
+	animation: zoom-in-zoom-out 1s ease ;
+}
+
+@keyframes zoom-in-zoom-out {
+  50% {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.5, 1.5);
+  }
+  10% {
+    transform: scale(1, 1);
+  }
+}	
+
+#testimonials{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width:100%;
+}
+
+.testimonial-heading{
+	letter-spacing: 1px;
+	margin: 30px 0px;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position:relative;
+	top:100px;
+}
+
+.testimonial-heading p{
+	color:white;
+	font-size: 1rem;
+	margin-bottom: 10px;
+        letter-spacing: 2px;
+}
+
+.testimonial-heading h1{
+        font-size: 2rem;                         
+	font-weight:bolder;
+        background-color: #202020;
+        color: white;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+}
+.testimonial-heading span{
+	color: red;
+}
+
+.testimonial-box-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width:100%;
+	position:relative;
+	top:90px;
+}
+
+.testimonial-box{
+	width:500px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	background-color: #ffffff;
+	padding: 20px;
+	margin: 15px;
+	cursor: pointer;
+}
+
+.profile-img{
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.profile-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.profile{
+	display: flex;
+	align-items: center;
+}
+
+.name-user{
+	display: flex;
+	flex-direction: column;
+}
+
+.name-user strong{
+	color: #3d3d3d;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.name-user span{
+	color: #979797;
+	font-size: 0.8rem;
+}
+
+.reviews{
+	color: goldenrod;
+}
+
+.reviews span{
+	color:grey;
+}
+
+.box-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.client-comment p{
+	font-size: 0.9rem;
+	color: #4b4b4b;
+}
+
+.testimonial-box:hover{
+	transform: translateY(-10px);
+	transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+	.testimonial-box{
+        	width:45%;
+        	padding: 10px;
+	}
+}
+
+@media(max-width:790px){
+	.testimonial-box{
+        	width:100%;
+	}
+	.testimonial-heading h1{
+        	font-size: 1.4rem;
+	}
+}
+
+@media(max-width:340px){
+	.box-top{
+        	flex-wrap: wrap;
+        	margin-bottom: 10px;
+	}
+	.reviews{
+        	margin-top: 10px;
+	}
+}
+
+::selection{
+	color: #ffffff;
+	background-color: #252525;
+}
+
+footer{
+	color:white;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap;
+	text-align:center;
+	padding:2rem;
+	position:relative;
+	top:300px;
+}
+
+footer div{
+	flex-basis:30%;
+}
+
+footer h1{
+	letter-spacing:0.5rem;
+}
+
+footer h1 span{
+	color:red;
+}
+
+footer p{
+	font-size:1rem;
+}
+
+footer i{
+	margin:0px 5px;
+	cursor:pointer;
+	transition:0.4s ease-in-out;
+}
+
+footer i:hover{
+	transform:rotate(360deg);
+}
+
+#about-us{
+	display:grid;
+	grid-template-columns:repeat(2,2fr);
+	grid-gap:1.5rem;
+	align-items:center;
+}
+
+.img img{
+	top:180px;
+	position:relative;
+	max-width:100%;
+	width:550px;
+	height:auto;
+	border-radius:0.625rem;
+	padding-left:50px;
+}
+
+.about{
+	top:150px;
+	position:relative;
+}
+
+.about h1{
+	color:white;
+	font-weight:600;
+	font-size:40px;
+	letter-spacing:0.5rem;
+}
+
+.about h1 span{
+	color:red;
+}
+
+.about h2{
+	top:30px;
+	position:relative;
+	color:white;
+}
+
+.about p{	
+	top:20px;
+	position:relative;
+	color:white;
+	margin:0.8rem 0 1.8rem;
+	line-height:1.7;
+}
+
+.about a{
+	top:10px;
+	position:relative;
+	background-color:white;
+	color:black;
+	border-radius:8px;
+	cursor:pointer;
+	transition: 0.4s ease-in-out;
+	padding:10px 20px;
+	box-shadow:2px 0px 5px white;
+}
+
+.about a:hover{
+	color:red;
+}
+
+#photos{
+	margin:5%;
+	margin-left:12%;
+	top:110px;
+	position:relative;
+}
+
+.container{
+	top:150px;
+	position:relative;
+	width:1000px;
+	height:460px;
+	box-shadow:0 0 30px rgba(0,0,0,0.3);
+	display:flex;	
+	align-items:center;
+ 	justify-content:center;
+}
+
+.swiper{
+	position:relative;
+	height:100%;
+	width:10000%;
+	padding:0;
+	margin:0;
+	transition:all 750ms ease;
+	left:0;
+}
+
+.swiper-slide img{
+	width:1000px;
+	height:600px;
+}
+
+#login{
+	position:relative;
+	top:380px;
+	background:url('E:\login.jpg') no-repeat;
+	background-size:100% 80%;
+	height:70vh;
+}	
+
+.heading{
+	color:white;
+	text-align:center;
+	top:30px;
+	position:relative;
+}
+
+.heading h2{
+	font-weight:600;
+	font-size:35px;
+	letter-spacing:0.5rem;
+}
+
+.heading h2 span{
+	color:red;
+}
+
+.heading p{
+	letter-spacing:0.3rem;
+	font-weight:600;
+	top:40px;
+	position:relative;
+}	
+
+.login-box{
+	top:90px;
+	position: relative;
+	border-radius: 5px;
+	padding: 20px 0 30px 0;
+	text-align:center;
+} 
+
+input,
+.btn{
+	width: 50%;
+	text-align:center;
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	margin: 5px 0;
+	opacity: 0.85;
+	display: inline-block;
+	font-size: 17px;
+	line-height: 20px;
+	text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover{
+	opacity: 1;
+}
+
+input[type=submit]{
+	background-color: #04AA6D;
+	color: white;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background-color: #45a049;
+}
+
+
